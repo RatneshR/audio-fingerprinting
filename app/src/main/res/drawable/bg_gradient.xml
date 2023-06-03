@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+<!--    Set the gradient properties for the Splash Screen background    -->
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="#78EEF3"
+        android:endColor="#147368"/>
+
+</shape>

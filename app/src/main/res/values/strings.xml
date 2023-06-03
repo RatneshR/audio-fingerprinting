@@ -1,0 +1,42 @@
+<resources>
+    <!--    App Level-->
+    <string name="app_name">Water Supplier</string>
+    <string name="app_client_id">1043150517863-m8rhh8osvqujkt7de9gi2aqft8rhmqee.apps.googleusercontent.com</string>
+    <string name="app_firebase_client_id">1043150517863-bkqedi7196skee8mjimrapvj0s7dop2m.apps.googleusercontent.com</string>
+    <string name="app_project_id">water-supplier-dev</string>
+<!--    <string name="landing_map_api_key">AIzaSyC5SiB1vlW8a8mf1pSlMloS6EzHOIplnHg</string>-->
+    <string name="landing_map_api_key">AIzaSyCltheQX7BlspjgonjPQyICRcV6jWQcnvE</string>
+
+    <string name="app_auth_uri">https://accounts.google.com/o/oauth2/auth</string>
+    <string name="app_token_uri">https://oauth2.googleapis.com/token</string>
+    <string name="default_label">Default Text</string>
+    <string name="copyright_text">Copyright © JARS 2022 All Rights Reserved</string>
+
+    <!--    Login Activity  -->
+    <string name="login_welcome_text">Welcome</string>
+    <string name="login_button_label">Login</string>
+    <string name="login_new_button_label">New User</string>
+    <string name="login_existing_button_label">New User</string>
+    <string name="signup_button_label">Signup</string>
+
+    <!--    login_welcome_text-->
+    <!--    SignUp Activity  -->
+    <string name="signup_welcome_text">Create your Account</string>
+    <string name="signup_name_text">Name</string>
+    <string name="signup_mobile_text">Mobile No.</string>
+    <string name="signup_email_text">Email</string>
+    <string name="signup_connect_with_text">Or Connect with</string>
+    <string name="signup_already_member_text">Already a member?</string>
+    <string name="signup_facebook_login">Facebook Login</string>
+    <string name="signup_google_login">Google Login</string>
+    <string name="signup_back_button">Back Button</string>
+    <string name="title_activity_landing_maps">LandingMapsActivity</string>
+
+
+    <!--    Map Types  -->
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
+    <string name="dropped_pin">Starting Point</string>
+</resources>

@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.watersupplierdev"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.example.watersupplierdev'
+}
+
+dependencies {
+
+
+    //AndroidX
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$live_data_version"
+    //Material
+    implementation 'com.google.android.material:material:1.9.0'
+    //Compose
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_navigation_compose_version"
+    //Firebase
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.2'
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+//    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    implementation "com.google.firebase:firebase-firestore-ktx"
+    //Play Services
+    // Also declare the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$play_services_version"
+    //Accompanist
+    implementation "com.google.accompanist:accompanist-navigation-animation:0.31.1-alpha"
+    //Coil
+    implementation "io.coil-kt:coil-compose:$coil_compose_version"
+
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+//    Kotlin is not only a very cool language in itself, but it also has some very good libraries that we can use to make our lives much simpler. For this project, we will use two libraries: One is anko, which has a lot of features, but we will use it here to perform async tasks (yes, and avoid using the horrible AsyncTask class), the other one is klaxon, which is a very light-weight library that will make JSON parsing really easy.
+    // Anko Layouts
+//    implementation "org.jetbrains.anko:anko-sdk25:$anko_version"
+    implementation 'com.beust:klaxon:5.6'
+    implementation 'org.chromium.net:cronet-embedded:108.5359.79'
+    implementation 'androidx.core:core-ktx:+'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
